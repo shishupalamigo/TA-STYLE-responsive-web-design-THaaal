@@ -1,0 +1,385 @@
+<!-- writeCode
+
+- Create a responsive layout according to the design shown below.
+
+#### Large Screen view(Above 768px)
+
+![Responsive Layout Assignment](https://raw.githubusercontent.com/suraj122/AC-STYLE-images/master/rwd/ex-2.png)
+
+#### Small Screen view(Below 768px)
+
+1. Figure what would be the best possible way to display the layout on small screens.
+
+2. Create hmaburger icon to toggle menu on mobile view.
+
+- Using CSS resets is necessary.
+- Use semantic tags and keep the nesting and indentation proper.
+- Pay attention to the codes, your code quality matters a lot.
+- Try to implement the layout as exactly as it has been provided in the design.
+- Pay attention to minor things like spacing, alignment, size, etc.
+- Use "Nunito" font-family for the assignment.
+- Figure out the best possible way to display the layout on small screens.
+- Create hmaburger icon to toggle menu on small screen view.
+- Once you are done with the assignment connect with the mentor and get the code reviewed. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events 2021 Assignment II | Responsive Web Design</title>
+    <!-- FONT FAMILY -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- FONT AWESOME ICONS  -->
+    <script src="https://kit.fontawesome.com/d77ac583c4.js" crossorigin="anonymous"></script>
+    <!-- STYLESHEET -->
+    <link rel="stylesheet" href="assets/stylesheet/style.css">
+</head>
+<body>
+    <!-- PAGE HEADER -->
+    <header class="page-header padding">
+        <div class="container flex justify-between item-center wrap">
+            <a href="#" class="brand">
+                <strong>Alt Events</strong>
+            </a>
+            <label for="toggle" class="bars">
+                <i class="fas fa-bars"></i>
+            </label>
+            <input type="checkbox" id="toggle">
+            <nav class="top-nav">
+                <ul class="flex item-center uppercase sm-column">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li>
+                        <a href="#">Services</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                    <li>
+                        <a href="#" class="btn primary-btn">Join Us</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- MAIN -->
+    <main>
+        <section class="hero padding">
+            <div class="container hero-container flex justify-between wrap">
+                <article class="hero-content flex-50 flex-100 order-1">
+                    <h1 class="heading">
+                        web developer conference <span class="active">2021</span>
+                    </h1>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                        when an unknown printer took a galley of type and scrambled it to make a type 
+                        specimen book.
+                    </p>
+                    <a href="#" class="btn primary-btn">Register Now</a>
+                </article>
+                <div class="hero-image flex-30 flex-100">
+                    <img src="assets/media/hero.png" alt=" Hero image" class="width-full">
+                </div>
+            </div>
+        </section>
+        <!-- ABOUT THE EVENT  -->
+        <section class="event">
+            <div class="container margin flex item-center justify-between wrap">
+                <div class="about-image flex-46 flex-100">
+                    <img src="assets/media/about.png" alt="About Image" class="width-full">
+                </div>
+                <article class="about-info flex-46 flex-100">
+                    <h2 class="secondry-heading">About the Event</h2>
+                    <p>
+                        There are many variations of passages of Lorem Ipsum available, but the 
+                        majority have suffered alteration in some form, by injected humour, or 
+                        randomised words which don't look even slightly believable.
+                    </p>
+                    <a href="#" class="btn primary-btn margin">Know more</a>
+                </article>
+            </div>
+        </section>
+        <!-- REASONS TO JOIN -->
+        <section class="join padding">
+            <div class="container">
+                <h2 class="secondry-heading text-center padding">
+                    Why you should join
+                </h2>
+                    <div class="reasons flex justify-between wrap">
+                        <div class="reasons-box flex-30 flex-100">
+                            <div class="number text-center">1</div>
+                            <h3 class="sub-heading">Network</h3>
+                            <p>
+                                Contrary to popular belief, Lorem Ipsum is not simply random text. 
+                                It has roots in a piece of classical Latin literature from 45 BC, 
+                                making it over 2000 years old.
+                            </p>
+                        </div>
+                        <div class="reasons-box flex-30 flex-100">
+                            <div class="number text-center">2</div>
+                            <h3 class="sub-heading">Great speakers</h3>
+                            <p>
+                                Contrary to popular belief, Lorem Ipsum is not simply random text. 
+                                It has roots in a piece of classical Latin literature from 45 BC, 
+                                making it over 2000 years old.
+                            </p>
+                        </div>
+                        <div class="reasons-box flex-30 flex-100">
+                            <div class="number text-center">3</div>
+                            <h3 class="sub-heading">Information</h3>
+                            <p>
+                                Contrary to popular belief, Lorem Ipsum is not simply random text. 
+                                It has roots in a piece of classical Latin literature from 45 BC, 
+                                making it over 2000 years old.
+                            </p>
+                        </div>
+                    </div>
+            </div>
+        </section>
+        <!-- SCHEDULE SECTION -->
+        <section class="schedule padding">
+            <div class="container">
+                <h2 class="secondry-heading text-center">
+                    Schedule
+                </h2>
+                <div class="schedule-container padding">
+                    <div class="schedule-content flex justify-between wrap">
+                        <div>
+                            <div class="date active-date flex item-center justify-center column">
+                                <span>06 </span> <span>Sept</span>
+                             </div>
+                             <hr class="connecting-line font-0">
+                        </div>
+                        <div class="schedule-image flex-25 flex-100">
+                            <img src="assets/media/schedule-01.jpg" alt="Schedule 1" class="width-full">
+                        </div>
+                        <article class="schedule-article flex-50 flex-100">
+                            <h3 class="sub-heading">
+                                Digital World event conversation
+                            </h3>
+                            <p>
+                                It is a long established fact that a reader will be distracted by the 
+                                readable content of a page when looking at its layout.
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, ipsa!
+                            </p>                           
+                        </article>
+                    </div>
+                    <div class="schedule-content flex justify-between wrap">
+                        <div>
+                            <div class="date flex item-center justify-center column">
+                                <span>07 </span> <span>Sept</span>
+                             </div>
+                             <hr class="connecting-line font-0">
+                        </div>
+                        <div class="schedule-image flex-25 flex-100">
+                            <img src="assets/media/schedule-02.jpg" alt="Schedule 2" class="width-full">
+                        </div>
+                        <article class="schedule-article flex-50 flex-100">
+                            <h3 class="sub-heading">
+                                Web designing conversation
+                            </h3>
+                            <p>
+                                It is a long established fact that a reader will be distracted by the 
+                                readable content of a page when looking at its layout.
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, ipsa!
+                            </p>                           
+                        </article>
+                    </div>
+                    <div class="schedule-content flex justify-between wrap">
+                        <div>
+                            <div class="date flex item-center justify-center column">
+                                <span>08 </span> <span>Sept</span>
+                             </div>
+                             <hr class="connecting-line font-0">
+                        </div>
+                        <div class="schedule-image flex-25 flex-100">
+                            <img src="assets/media/schedule-03.jpg" alt="Schedule 3" class="width-full">
+                        </div>
+                        <article class="schedule-article flex-50 flex-100">
+                            <h3 class="sub-heading">
+                                Web development conversation
+                            </h3>
+                            <p>
+                                It is a long established fact that a reader will be distracted by the 
+                                readable content of a page when looking at its layout.
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, ipsa!
+                            </p>                           
+                        </article>
+                    </div>
+                    <div class="schedule-content flex justify-between wrap">
+                        <div>
+                            <div class="date flex item-center justify-center column">
+                                <span>09 </span> <span>Sept</span>
+                             </div>
+                        </div>
+                        <div class="schedule-image flex-25 flex-100">
+                            <img src="assets/media/schedule-04.jpg" alt="Schedule 4" class="width-full">
+                        </div>
+                        <article class="schedule-article flex-50 flex-100">
+                            <h3 class="sub-heading">
+                                Digital marketing conference
+                            </h3>
+                            <p>
+                                It is a long established fact that a reader will be distracted by the 
+                                readable content of a page when looking at its layout.
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, ipsa!
+                            </p>                           
+                        </article>
+                    </div> 
+                </div>
+                <div class="text-center schedule-btn-container">
+                    <a href="#" class="btn primary-btn">Download Schedule</a>
+                </div>
+            </div>
+        </section>
+        <!-- HIGHLIGHTS SECTION -->
+        <section class="highlights padding">
+            <div class="container">
+                <div class="container flex justify-between wrap">
+                    <div class="flex-20 highlight-content flex-100">
+                        <div class="highlights-image">
+                            <img src="assets/media/speaker.png" alt="Speakers">
+                        </div>
+                        <h3 class="sub-heading">20+</h3>
+                        <h4>Great Speakers</h4>
+                    </div>
+                    <div class="flex-20 highlight-content active-highlight flex-100">
+                        <div class="highlights-image">
+                            <img src="assets/media/idea.png" alt="Ideas">
+                        </div>
+                        <h3 class="sub-heading">50+</h3>
+                        <h4>Total Topic</h4>
+                    </div>
+                    <div class="flex-20 highlight-content flex-100">
+                        <div class="highlights-image">
+                            <img src="assets/media/participants.png" alt="Speakers">
+                        </div>
+                        <h3 class="sub-heading">300+</h3>
+                        <h4>Participants</h4>
+                    </div>
+                    <div class="flex-20 highlight-content flex-100">
+                        <div class="highlights-image">
+                            <img src="assets/media/sponsor.png" alt="Speakers">
+                        </div>
+                        <h3 class="sub-heading">20+</h3>
+                        <h4>Sponsors</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- POSTER IMAGE SECTION  -->
+        <section class="margin">
+            <div class="container flex poster">
+                <img src="assets/media/banner.png" alt="Banner image" class="width-full">
+                <div class="play-btn flex item-center justify-center">
+                    <i class="fas fa-play"></i>
+                </div>
+            </div>
+        </section>
+        <!-- NEWS SECTION -->
+        <section class="news padding">
+            <div class="container">
+                <h2 class="secondry-heading text-center">
+                    Our latest news
+                </h2>
+                <div class="flex justify-between padding wrap">
+                    <div class="news-content flex-30 flex-100">
+                        <img src="assets/media/news-01.png" alt="News 1" class="width-full">
+                        <h4>
+                            How to make a great portfolio as a beginner developer
+                        </h4>
+                        <p class="padding">
+                            The standard chunk of Lorem Ipsum used since the 1500s is reproduced 
+                            below for those interested. Sections 1.10.32 and 1.10.33 from "de 
+                            Finibus Bonorum et Malorum" by Cicero are also reproduced in their 
+                            exact original form.
+                        </p>
+                        <a href="#">Read More</a>
+                    </div>
+                    <div class="news-content flex-30 flex-100">
+                        <img src="assets/media/news-02.png" alt="News 2" class="width-full">
+                        <h4>
+                            4 common situations while using Git and how to solve them 
+                        </h4>
+                        <p class="padding">
+                            The standard chunk of Lorem Ipsum used since the 1500s is reproduced 
+                            below for those interested. Sections 1.10.32 and 1.10.33 from "de 
+                            Finibus Bonorum et Malorum" by Cicero are also reproduced in their 
+                            exact original form.
+                        </p>
+                        <a href="#" class="active">Read More</a>
+                    </div>
+                    <div class="news-content flex-30 flex-100">
+                        <img src="assets/media/news-03.png" alt="News 3" class="width-full">
+                        <h4>
+                            Basic Unix Commands that you should know 
+                        </h4>
+                        <p class="padding">
+                            The standard chunk of Lorem Ipsum used since the 1500s is reproduced 
+                            below for those interested. Sections 1.10.32 and 1.10.33 from "de 
+                            Finibus Bonorum et Malorum" by Cicero are also reproduced in their 
+                            exact original form.
+                        </p>
+                        <a href="#">Read More</a>
+                    </div>
+                </div>                
+            </div>
+        </section>
+    </main>
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="flex justify-between padding wrap footer-content">
+                <div class="flex-30 flex-100 sm-center">
+                    <img src="assets/media/footer-logo.png" alt="Footer Logo">
+                </div>
+                <nav class="flex-40 flex-100 sm-center sm-column">
+                    <h4 >
+                        Quick Links
+                    </h4>
+                    <ul class="flex wrap sm-column">
+                        <li>
+                            <a href="#">Program</a>
+                        </li>
+                        <li>
+                            <a href="#">About Us</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact Us</a>
+                        </li>
+                        <li>
+                            <a href="#">Services</a>
+                        </li>
+                    </ul>
+                </nav>
+                <nav class="flex-30 flex-100 sm-center sm-column">
+                    <h4>
+                        Follow Us
+                    </h4>
+                    <ul class="flex">
+                        <li>
+                            <i class="fab fa-facebook-square"></i>
+                        </li>
+                        <li>
+                            <i class="fab fa-twitter-square"></i>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="copyright-info container text-center">
+            <small>
+                &copy;AltCampus Services Pvt Ltd. 2018-present 
+            </small>
+        </div>
+    </footer>
+</body>
+</html>
