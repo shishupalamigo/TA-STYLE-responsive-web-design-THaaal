@@ -28,12 +28,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Events 2020 Assignment II | Responsive Web Design</title>
+    <title>Events 2021 Assignment II | Responsive Web Design</title>
     <!-- FONT FAMILY -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:
-                wght@200;300;400;600;700;800;900&display=swap"  
-                rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
     <!-- FONT AWESOME ICONS  -->
     <script src="https://kit.fontawesome.com/d77ac583c4.js" crossorigin="anonymous"></script>
     <!-- STYLESHEET -->
@@ -51,7 +49,7 @@
             </label>
             <input type="checkbox" id="toggle">
             <nav class="top-nav">
-                <ul class="flex item-center uppercase">
+                <ul class="flex item-center uppercase sm-column">
                     <li>
                         <a href="index.html">Home</a>
                     </li>
@@ -93,19 +91,19 @@
             </div>
         </section>
         <!-- ABOUT THE EVENT  -->
-        <section>
-            <div class="container about-container margin flex item-center justify-between wrap">
+        <section class="event">
+            <div class="container margin flex item-center justify-between wrap">
                 <div class="about-image flex-46 flex-100">
                     <img src="assets/media/about.png" alt="About Image" class="width-full">
                 </div>
                 <article class="about-info flex-46 flex-100">
                     <h2 class="secondry-heading">About the Event</h2>
-                    <p class="padding">
+                    <p>
                         There are many variations of passages of Lorem Ipsum available, but the 
                         majority have suffered alteration in some form, by injected humour, or 
                         randomised words which don't look even slightly believable.
                     </p>
-                    <a href="#" class="btn primary-btn">Know more</a>
+                    <a href="#" class="btn primary-btn margin">Know more</a>
                 </article>
             </div>
         </section>
@@ -149,7 +147,7 @@
         <!-- SCHEDULE SECTION -->
         <section class="schedule padding">
             <div class="container">
-                <h2 class="secondry-heading text-center padding">
+                <h2 class="secondry-heading text-center">
                     Schedule
                 </h2>
                 <div class="schedule-container padding">
@@ -237,7 +235,7 @@
                         </article>
                     </div> 
                 </div>
-                <div class="text-center padding">
+                <div class="text-center schedule-btn-container">
                     <a href="#" class="btn primary-btn">Download Schedule</a>
                 </div>
             </div>
@@ -340,14 +338,14 @@
     <footer class="footer">
         <div class="container">
             <div class="flex justify-between padding wrap footer-content">
-                <div class="flex-30 flex-100 footer-logo">
+                <div class="flex-30 flex-100 sm-center">
                     <img src="assets/media/footer-logo.png" alt="Footer Logo">
                 </div>
-                <nav class="flex-40 flex-100">
+                <nav class="flex-40 flex-100 sm-center sm-column">
                     <h4 >
                         Quick Links
                     </h4>
-                    <ul class="flex wrap">
+                    <ul class="flex wrap sm-column">
                         <li>
                             <a href="#">Program</a>
                         </li>
@@ -362,7 +360,7 @@
                         </li>
                     </ul>
                 </nav>
-                <nav class="flex-30 flex-100">
+                <nav class="flex-30 flex-100 sm-center sm-column">
                     <h4>
                         Follow Us
                     </h4>
